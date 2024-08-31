@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FuelCalculator</string>
+    <string name="kilomiters">Podaj ilość kilometrów</string>
+    <string name="fuel">Zatankowane litry</string>
+    <string name="value">Podaj kwote</string>
+    <string name="date">Podaj date</string>
+    <string name="money">Koszt paliwa</string>
+    <string name="trip">Przejechane odległość</string>
+</resources>
