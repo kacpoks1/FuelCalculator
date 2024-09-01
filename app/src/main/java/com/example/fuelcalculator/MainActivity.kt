@@ -31,10 +31,9 @@ class MainActivity : ComponentActivity() {
         val sharedPref = getSharedPreferences("Car", Context.MODE_PRIVATE)
 
         // Załaduj zapisane wartości i wyświetl je na starcie
-        val totalKilometers = sharedPref.getInt("km", 0)
-        val totalValue = sharedPref.getInt("money", 0)
-        val totalFuel = sharedPref.getInt("liters", 0)
-        val totalTrip = sharedPref.getInt("trip", 0)
+        val totalKilometers = sharedPref.getFloat("km", 0)
+        val totalValue = sharedPref.getFloat("money", 0)
+        val totalFuel = sharedPref.getFloat("liters", 0)
 
         // Oblicz spalanie na 100 km
         if (totalKilometers > 0) {
@@ -55,9 +54,9 @@ class MainActivity : ComponentActivity() {
             val prevValue = sharedPref.getInt("money", 0)
             val prevFuel = sharedPref.getInt("liters", 0)
 
-            val newKilometers = binding.kilomiters.text.toString().toInt()
-            val newValue = binding.value.text.toString().toInt()
-            val newFuel = binding.fuel.text.toString().toInt()
+            val newKilometers = binding.kilomiters.text.toString().toFloat()
+            val newValue = binding.value.text.toString().toFloat()
+            val newFuel = binding.fuel.text.toString().toFloat()
             val date = binding.date.text.toString()
 
             val totalKilometers = prevKilometers + newKilometers
