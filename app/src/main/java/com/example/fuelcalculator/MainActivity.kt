@@ -76,7 +76,7 @@ class MainActivity : ComponentActivity() {
                 apply()
             }
 
-            
+
             binding.kosztCalkowityDane.setText("$totalValue zł")
             binding.odlegloscDane.setText("$totalKilometers km")
 
