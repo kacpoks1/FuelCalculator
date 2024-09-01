@@ -53,6 +53,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    val activity_version = "1.9.1"
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -76,6 +79,10 @@ dependencies {
     implementation ("com.jjoe64:graphview:4.2.2")
     implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.8.0")
     implementation ("androidx.room:room-runtime:2.5.0")
+    implementation("androidx.activity:activity-ktx:$activity_version")
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+    implementation ("androidx.core:core-ktx:1.10.0")
+    implementation ("androidx.activity:activity-ktx:1.8.0")
 
 
 

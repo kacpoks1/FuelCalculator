@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-        <solid android:color="#e8ebe9"/> <!-- Czerwony kolor -->
-        <corners android:radius="8dp"/> <!-- Zaokrąglone rogi -->
+        <solid android:color="#C5C4C4"/> <!-- Czerwony kolor -->
+        <corners android:radius="2dp"/> <!-- Zaokrąglone rogi -->
         <padding
-            android:left="4dp"
-            android:right="4dp"
-            android:top="4dp"
-            android:bottom="4dp"/>
+            android:left="2dp"
+            android:right="2dp"
+            android:top="2dp"
+            android:bottom="2dp"/>
+        <stroke
+            android:width="2dp"
+            android:color="#A0A0A0" />
+
 </shape>

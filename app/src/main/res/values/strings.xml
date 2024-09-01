@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">FuelCalculator</string>
-    <string name="kilomiters">Podaj ilość kilometrów</string>
-    <string name="fuel">Zatankowane litry</string>
-    <string name="value">Podaj kwote</string>
-    <string name="date">Podaj date</string>
-    <string name="money">Koszt paliwa</string>
-    <string name="trip">Przejechane odległość</string>
+    <string name="kilomiters1">Podaj ilość kilometrów</string>
+    <string name="fuel1">Zatankowane litry</string>
+    <string name="value1">Podaj kwote</string>
+    <string name="dat1e">Podaj date</string>
+    <string name="money1">Koszt paliwa</string>
+    <string name="trip1">Przejechane odległość</string>
+    <string name="Nazwa">Kalkulator Spalania</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
 </resources>

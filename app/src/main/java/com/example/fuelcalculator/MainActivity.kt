@@ -5,26 +5,33 @@ import android.os.Bundle
 import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import com.example.fuelcalculator.databinding.ActivityMainBinding
 import com.jjoe64.graphview.GraphView
 import com.jjoe64.graphview.series.DataPoint
 import com.jjoe64.graphview.series.LineGraphSeries
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
-import android.database.sqlite.SQLiteDatabase
-import android.database.sqlite.SQLiteOpenHelper
-
 
 
 class MainActivity : ComponentActivity() {
+    private lateinit var binding: ActivityMainBinding
+
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         enableEdgeToEdge()
+
+
+
+
+
+
+
 
         val editTextDate = findViewById<EditText>(R.id.date)
 
@@ -59,6 +66,9 @@ class MainActivity : ComponentActivity() {
         // Dodawanie serii danych do GraphView
         graphView.addSeries(series)
     }
+
+
+
 
 }
 
